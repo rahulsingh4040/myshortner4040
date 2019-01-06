@@ -25,7 +25,7 @@ SECRET_KEY = 'nc^hald=7!(2ujmki1ol_2d#6*y^#hwi@p-5_q1_6dtt*380_#'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['www.shortenme.com', 'shortenme.com', 'www.shortenme.co.in','myshortner4040.herokuapp.com']
+ALLOWED_HOSTS = ['www.shortenme.com', 'shortenme.com', 'www.shortenme.co.in','myshortner4040.herokuapp.com','www.rahulshortenme.com']
 
 
 # Application definition
