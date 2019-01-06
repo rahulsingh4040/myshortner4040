@@ -1,0 +1,33 @@
+{% extends "url_shortner/base.html" %}
+{% block title %}{{ Object.shortcode }}{% endblock %}
+{% block container %}
+<div class='centered'>
+	<h1>URL Shortened</h1>
+	<p><a href='{{ Object.get_short_url }}'><font color="#adadad">{{ Object.get_short_url }}</font></a></p>
+	<a class = 'btn btn-outline-primary' href="/"> Shorten Another </a>
+	<p><br/>
+		Share your url on :&nbsp;
+		<a href="https://www.facebook.com/sharer/sharer.php?u={{ Object.get_short_url }}" target="_blank">
+			<i class="fa fa-facebook"></i>
+    	</a>
+    	<a href="https://twitter.com/home?status={{ Object.get_short_url }}" target="_blank">
+			<i class="fa fa-twitter"></i>
+		</a>
+		<a href='https://plus.google.com/share?url={{ Object.get_short_url }}' target="_blank">
+			<i class="fa fa-google"></i>
+		</a>
+		<a href="https://www.linkedin.com/shareArticle?mini=true&url={{ Object.get_short_url }}" target="_blank">
+			<i class="fa fa-linkedin" ></i>
+		</a>
+	</p>
+</div>
+<style>
+	.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+  color: #ec7d7d !important;
+}
+</style>
+{% endblock container %}

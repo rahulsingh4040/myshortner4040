@@ -1,0 +1,23 @@
+{% extends "url_shortner/base.html" %}
+{% block title %}Shorten your URLs{% endblock title %}
+{% block container %}
+<div class="centered" style="vertical-align: middle">
+	<div class="customme"><h1 class="cover-heading " style=""><b>{{ title }}</b></h1>
+	<p class="lead">Shorten that URL</p></div>	
+	<form method="post" action=".">
+		{{ form.as_p }}{% csrf_token %}<br/>
+		<input class="btn btn-outline-primary" type="submit" value="Shorten &raquo;" />
+	</form>
+</div>
+<style>
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+}
+.customme{
+	color: #ec7d7d !important;
+}
+</style>
+{% endblock container %}
