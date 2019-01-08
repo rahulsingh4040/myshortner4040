@@ -14,7 +14,7 @@ import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-
+print(BASE_DIR)
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__fil
 SECRET_KEY = 'nc^hald=7!(2ujmki1ol_2d#6*y^#hwi@p-5_q1_6dtt*380_#'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['myshortner4040.herokuapp.com']
 
@@ -56,13 +56,13 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'url_shortner.urls'
 ROOT_HOSTCONF = 'shortener.hosts'
 DEFAULT_HOST = 'www'
-DEFAULT_REDIRECT_URL = 'https://myshortner4040.herokuapp.com'
-PARENT_HOST = "herokuapp.com"
+#DEFAULT_REDIRECT_URL = 'https://myshortner4040.herokuapp.com'
+#PARENT_HOST = "herokuapp.com"
 
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR,'url_shortner/templates')],
+        'DIRS': [os.path.join(BASE_DIR,'url_shortner/templates/')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
