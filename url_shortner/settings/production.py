@@ -24,7 +24,7 @@ SECRET_KEY = 'nc^hald=7!(2ujmki1ol_2d#6*y^#hwi@p-5_q1_6dtt*380_#'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['myshortner4040.herokuapp.com']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -55,8 +55,6 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'url_shortner.urls'
 ROOT_HOSTCONF = 'shortener.hosts'
 DEFAULT_HOST = 'www'
-#DEFAULT_REDIRECT_URL = 'https://myshortner4040.herokuapp.com'
-#PARENT_HOST = "herokuapp.com"
 
 TEMPLATES = [
     {
