@@ -70,7 +70,7 @@
 			"file": "url_shortner/settings/production.py",
 			"settings":
 			{
-				"buffer_size": 3457,
+				"buffer_size": 3487,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -384,15 +384,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3457,
+						"buffer_size": 3487,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3457,
-								3457
+								0,
+								0
 							]
 						],
 						"settings":
@@ -402,7 +402,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1747.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
